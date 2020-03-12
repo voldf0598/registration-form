@@ -1,29 +1,21 @@
 html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-}
-
-h2 {
-  font-style: italic;
+h1 {
+  border-bottom: solid #000;
 }
 
 .btn:hover {
-  background-color: #000
+  background-color: #000;
   color: #f2f2f2;
 }
 
 @media only screen and (min-width: 60em) {
+
   .padding-right {
     padding: 1rem;
   }
+
 }

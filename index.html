@@ -4,67 +4,72 @@
   <meta charset="utf-8">
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet"></head>
-  <body>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <section class="max-length island">
-      <div>
-        <h1 class="push-0">Want to go to Mars?</h1>
-        <hr>
-        <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      </div>
+  <section class="max-length island">
+    <div>
+      <h1 class="push-0">Want to go to Mars?</h1>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    </div>
 
-      <form>
-        <h2 class="giga">Personal details</h2>
+    <form method="POST" action="https://formspree.io/bradlet">
+      <fieldset>
+        <legend class="giga italic">Personal details</legend>
 
         <div class="grid ">
           <div class="pad-b unit xs-1 s-1 m-1 l-1-2 padding-right">
             <label for="name">Name</label>
             <input id="name">
-            </div>
+          </div>
 
-              <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
-                <label for="number">Age</label>
-                <input id="number">
-              </div>
+          <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+            <label for="number">Age</label>
+            <input id="number" name="name">
+          </div>
 
-              <div class="pad-b unit xs-1 s-1 m-1 l-1-2 padding-right">
-                <label for="email">Email</label>
-                <input id="email">
-              </div>
+          <div class="pad-b unit xs-1 s-1 m-1 l-1-2 padding-right">
+            <label for="email">Email</label>
+            <input id="email">
+          </div>
 
-              <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
-                <label for="subject">Physical fitness</label>
-                <select id="subject">
-                  <option>Super-human</option>
-                  <option>Fit as a fiddle</option>
-                  <option>Not terribly strong</option>
-                  <option>A little couch-potato-y</option>
-                </select>
-              </div>
-            </div>
+          <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+            <label for="subject">Physical fitness</label>
+            <select id="subject" name="name">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+        </div>
 
-            <div class="pad-b">
-              <label for="text">Address</label>
-              <textarea id="address"></textarea>
-            </div>
+        <div class="pad-b">
+          <label for="text">Address</label>
+          <textarea id="address" name="name"></textarea>
+        </div>
+      </fieldset>
 
-            <h2 class="giga">Mission statement</h2>
+      <fieldset>
+        <legend class="giga italic">Mission statement</legend>
 
-            <div class="pad-b">
-              <label for="text">Why do you want to go to Mars?</label>
-              <textarea id="text"></textarea>
-            </div>
+        <div class="pad-b">
+          <label for="text">Why do you want to go to Mars?</label>
+          <textarea id="text" name="name"></textarea>
+        </div>
 
-            <div>
-              <button class="btn" type="submit">Register for the trip!</button>
-            </div>
+        <div>
+          <button class="btn" type="submit">Register for the trip!</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
+        </div>
 
-          </form>
-        </section>
-      </body>
-      </html>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
